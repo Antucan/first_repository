@@ -8,12 +8,7 @@ namespace App\Models;
  */
 class Coach extends Person
 {
-    /**
-     * Coach name
-     *
-     * @var string
-     */
-    private $name;
+    
 
     /**
      * Coach Status
@@ -42,7 +37,7 @@ class Coach extends Person
 
     public function __construct(string $name, bool $active, string $tactic)
     {
-        $this->name = $name;
+        
         $this->active = $active;
         $this->tactic = $tactic;
     }
@@ -51,10 +46,7 @@ class Coach extends Person
      *
      * @return  string
      */
-    public function getName()
-    {
-        return $this->name;
-    }
+    
     /**
      * Get Coach Status
      *
@@ -77,12 +69,7 @@ class Coach extends Person
      *
      * @return  self
      */
-    public function setName(string $name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
+    
     /**
      * Set status in bool
      *
@@ -104,13 +91,5 @@ class Coach extends Person
      *
      * @return  self
      */
-    public function deviseTeamTactic(string $tactic): void
-    {
-        echo "{$this->name} says: Alright team, our new tactic for the next game will be '{$tactic}'!";
-    }
     
-    function train()
-    {
-        echo "{$this->name} says: Come on Team lets go train!!!!!";
-    }
 }

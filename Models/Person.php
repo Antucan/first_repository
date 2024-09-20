@@ -7,6 +7,16 @@ namespace App\Models;
  */
 class Person
 {
+  /**
+     * Person name
+     *
+     * @var string
+     */
+    private $name;
+    public function getName()
+    {
+        return $this->name;
+    }
 /**
    * age of person
    *
