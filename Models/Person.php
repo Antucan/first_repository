@@ -4,7 +4,7 @@ namespace App\Models;
 
 /**
  * Represents any person.
- * Marc
+ * Marc.
  */
 class Person
 {
